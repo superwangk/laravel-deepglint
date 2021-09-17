@@ -1,0 +1,32 @@
+{
+    "name": "ttlmm/laravel-deepglint",
+    "alias": "laravel-deepglint",
+    "description": "优肯-格灵深瞳",
+    "type": "library",
+    "keywords": ["dcat-admin", "extension"],
+    "homepage": "https://github.com/ttlmm/laravel-deepglint",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "wangkun",
+            "email": "1830990462@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "dcat/laravel-admin": "~2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "TTLMM\\Deepglint\\": "src/"
+        }
+    },
+    "extra": {
+        "dcat-admin": "TTLMM\\Deepglint\\LaravelDeepglintServiceProvider",
+        "laravel": {
+            "providers": [
+                "TTLMM\\Deepglint\\LaravelDeepglintServiceProvider"
+            ]
+        }
+    }
+}
